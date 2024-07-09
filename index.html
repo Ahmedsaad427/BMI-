@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="10476452.png">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+          <div class="item mt-3 p-1">
+            <form>
+              <div class="mb-5 text-white">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Height in CM</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputheight"
+                  aria-describedby="heightCM"
+                />
+              </div>
+              <div class="mb-5 text-white">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Weight in KG</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputweight"
+                  aria-describedby="weightKG"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary d-flex p-3 fs-3 text-center m-auto justify-content-center fw-bold">Calculate</button>
+            </form>
+            <div class="result-box mt-2 text-white">
+              <h2>Result:</h2>
+              <div id="result"></div>
+            </div>
+            <hr />
+            <div class="weight-guide ms-3 text-center">
+              <h4>BMI Weight Guide</h4>
+              <p>Under weight = Less Than 18.6</p>
+              <p>Normal Range = 18.6 and 24.9</p>
+              <p>Over Weight = Greater Than 24.9</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
